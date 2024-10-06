@@ -13,7 +13,7 @@ def chat_llm():
 
     # OpenAI API 호출을 통해 구동 시 사용
     llm = ChatOpenAI(
-        model="gpt-4o",  # "gpt-4"로 변경 가능
+        model="gpt-4o", 
         api_key=os.getenv("OPENAI_API_KEY"),
         temperature=0.7,  # 창의성 및 다양성 증가
         streaming=True,
